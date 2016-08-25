@@ -210,7 +210,7 @@
 										<input type="email" name="email" id="email" placeholder="Email" />
 									</div>
 									<div class="field half">
-										<input type="text" name="telephone" id="telephone" placeholder="Telephone" />
+										<input type="text" name="tel" id="tel" placeholder="Tel" />
 									</div>
 									<div class="field">
 										<textarea name="message" id="message" placeholder="Message"></textarea>
@@ -238,11 +238,21 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.maskedinput.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
             <script src="assets/js/mailto.js"></script>
+
+            <script>
+                //Код jQuery, установливающий маску для ввода телефона элементу input
+                //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+                $(function () {
+                    //2. Получить элемент, к которому необходимо добавить маску
+                    $("#tel").mask("+7 (999) 999-99-99");
+                });
+            </script>
 
 	</body>
 </html>
