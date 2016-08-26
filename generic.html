@@ -1,20 +1,30 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Generic - dgts.tv</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- HTML5 -->
+<!DOCTYPE html>
+<!-- BEGIN html -->
+<html lang="ru-RU">
+    <!-- BEGIN head -->
+    <head>
+        <!-- Meta Tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="ru-RU"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Author" content="Naumov Andrey">
+        <meta name="Description" content="dgts.tv | Цифровые телесистемы">
+        <meta name="Keywords" content="dgts.tv, Цифровые телесистемы">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Title -->
+        <title>Цифровые телесистемы</title>
+        <link rel="shortcut icon" href="images/favicons/icon.ico" type="image/x-icon">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <!-- Responsive CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
+    <!-- END head -->
+    </head>
+    <!-- BEGIN body -->
 	<body>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -24,13 +34,13 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">dgts.tv</span>
+									<span class="symbol"><img src="images/favicons/logo.png" alt="" /></span><span class="title">Цифровые телесистемы</span>
 								</a>
 
 							<!-- Nav -->
 								<nav>
 									<ul>
-										<li><a href="#menu">Menu</a></li>
+										<li><a href="#menu">Меню</a></li>
 									</ul>
 								</nav>
 
@@ -39,13 +49,16 @@
 
 				<!-- Menu -->
 					<nav id="menu">
-						<h2>Menu</h2>
+						<h2>Меню</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="generic.html">Спутниковое телевидение</a></li>
+							<li><a href="generic.html">Цифровое эфирное телевидение</a></li>
+							<li><a href="generic.html">Видеонаблюдение</a></li>
+							<li><a href="generic.html">Домофоны</a></li>
+							<li><a href="generic.html">Электромонтажные работы</a></li>
+							<li><a href="elements.html">Elements (временно)</a></li>
+							<li><a href="#contact">Связаться с нами</a></li>
 						</ul>
 					</nav>
 
@@ -63,25 +76,31 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
+							<section id="contact">
+								<h2>Связаться с нами</h2>
+								<form id="contact-form" role="form">
 									<div class="field half first">
-										<input type="text" name="name" id="name" placeholder="Name" />
+										<input type="text" name="name" id="name" placeholder="Имя" />
 									</div>
 									<div class="field half">
+										<input type="text" name="subject" id="subject" placeholder="Тема" />
+									</div>
+									<div class="field half first">
 										<input type="email" name="email" id="email" placeholder="Email" />
 									</div>
+									<div class="field half">
+										<input type="text" name="telephone" id="telephone" placeholder="Мобильный телефон" />
+									</div>
 									<div class="field">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
+										<textarea name="message" id="message" placeholder="Сообщение"></textarea>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send" class="special" /></li>
+										<li><input type="submit" value="Отправить" class="special" /></li>
 									</ul>
 								</form>
 							</section>
 							<section>
-								<h2>Follow</h2>
+								<h2>Подписаться</h2>
 								<ul class="icons">
 									<li><a href="https://vk.com/dgts_tv" class="icon style2 fa-vk"><span class="label">VK</span></a></li>
 									<li><a href="tel:+7" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
@@ -96,12 +115,22 @@
 
 			</div>
 
-		<!-- Scripts -->
+        <!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.maskedinput.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            <script src="assets/js/mailto.js"></script>
 
-	</body>
+            <script>
+                $(function () {
+                    $("#telephone").mask("+7 (999) 999-99-99");
+                });
+            </script>
+
+    <!-- END body -->
+    </body>
+<!-- END html -->
 </html>
